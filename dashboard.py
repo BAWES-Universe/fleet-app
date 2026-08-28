@@ -5467,6 +5467,30 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, velocity_panel_html().encode(), "text/html; charset=utf-8")
             return
 
+        if path.startswith("/api/brick-status/"):
+            # NL-4 (round-neural-002): per-brick status tool, one call <10s
+            bid = path.split("/")[-1]
+            try:
+                cards = json.loads(open("/srv/bricks/orchestrator/agent-cards.json").read())
+                agent = next((a for a in cards.get("agents", []) if a["name"] == bid), None)
+                live = {}
+                try:
+                    import urllib.request
+                    with urllib.request.urlopen("http://127.0.0.1:8088/api/fleet", timeout=5) as r:
+                        net = json.loads(r.read().decode())
+                    m = next((x for x in net.get("members", []) if (x.get("brick_id") or x.get("id")) == bid), None)
+                    if m: live = {"telemetry": m}
+                except Exception:
+                    pass
+                if agent is None and not live:
+                    self._send(404, json.dumps({"error": f"no brick named {bid}"}).encode(), "application/json")
+                else:
+                    out = {"brick": bid, "card": agent, "live_telemetry": live.get("telemetry")}
+                    self._send(200, json.dumps(out, ensure_ascii=False).encode(), "application/json")
+            except Exception as e:
+                self._send(500, json.dumps({"error": str(e)}).encode(), "application/json")
+            return
+
         if path == "/api/agent-cards":
             # NL-1 (round-neural-002): the whole network as A2A agent cards, one call
             try:
