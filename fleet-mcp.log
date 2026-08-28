@@ -9057,3 +9057,510 @@ INFO:     Waiting for application shutdown.
 StreamableHTTP session manager shutting down
 INFO:     Application shutdown complete.
 [Fri Aug 28 12:55:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2276452]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:00:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2279254]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:05:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2283129]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:10:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2286057]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:15:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2288743]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:20:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2291446]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:25:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2293999]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:30:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2297220]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:35:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2299881]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:40:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2302519]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:45:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2305324]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:50:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2308038]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 13:55:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2311420]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:00:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2314135]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:05:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2316580]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:10:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2319344]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:15:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2330005]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:20:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2339440]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:25:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2348658]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:30:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2358218]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:35:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2367452]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:40:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2377930]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:45:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2388383]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:50:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2398418]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 14:55:05 UTC 2026] FAILED to start
+[Fri Aug 28 15:00:05 UTC 2026] fleet-data MCP started (PID: 2407414)
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2407414]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2416822]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:05:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2426325]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:10:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2435852]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:15:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2444906]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:20:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2454539]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:25:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2463545]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:30:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2473539]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:35:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2482682]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:40:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2491977]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:45:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2500968]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:50:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2510530]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 15:55:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2519589]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 16:00:05 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2529149]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 16:05:04 UTC 2026] FAILED to start
+/srv/build/fleet-dashboard/mcp-venv/lib/python3.14/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+Fleet-data MCP: http://0.0.0.0:8004/mcp
+Health: http://0.0.0.0:8004/health
+INFO:     Started server process [2539600]
+INFO:     Waiting for application startup.
+StreamableHTTP session manager started
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8004): [errno 98] address already in use
+INFO:     Waiting for application shutdown.
+StreamableHTTP session manager shutting down
+INFO:     Application shutdown complete.
+[Fri Aug 28 16:10:05 UTC 2026] FAILED to start

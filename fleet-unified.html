@@ -51,7 +51,7 @@
 </table>
 
 <script>
-const API='http://51.75.74.214:8088/api/fleet';
+const API='/api/fleet-live';
 const REQUIRED=['brick_id','provider','cpu_cores','cpu_load_1m','mem_total_mb','mem_used_mb','threads_available','threads_in_use','working_on','status','ts'];
 function schemaCheck(m){
   const missing=REQUIRED.filter(k=>!(k in m));
