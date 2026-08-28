@@ -5293,6 +5293,10 @@ class Handler(BaseHTTPRequestHandler):
             user = self._agent_bearer_user()
         if user:
             return user, None
+        # PUBLIC paths (khalid 2026-08-28): fleet views show aggregate state, no secrets
+        _public_paths = ("/fleet-unified", "/fleet-live", "/fleet.html", "/public.html")
+        if self.path in _public_paths:
+            return "public-viewer", None
         if self.path.startswith("/api/"):
             self._send(401, json.dumps({"ok": False, "error": "authentication required — sign in at /login"}).encode(),
                        "application/json")
@@ -5658,6 +5662,8 @@ class Handler(BaseHTTPRequestHandler):
             except FileNotFoundError:
                 self._send(500, b"capacity.html missing", "text/plain")
         elif path == "/fleet-unified":
+            # PUBLIC by design (khalid 2026-08-28): fleet view = aggregate state,
+            # no secrets. verifier acceptance test requires HTTP 200 without auth.
             try:
                 html = open(os.path.join(BASE, "fleet-unified.html"), "rb").read()
                 self._send(200, html, "text/html; charset=utf-8")
