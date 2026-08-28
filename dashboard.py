@@ -5467,6 +5467,27 @@ class Handler(BaseHTTPRequestHandler):
             self._send(200, velocity_panel_html().encode(), "text/html; charset=utf-8")
             return
 
+        if path == "/api/agent-cards":
+            # NL-1 (round-neural-002): the whole network as A2A agent cards, one call
+            try:
+                data = open("/srv/bricks/orchestrator/agent-cards.json").read()
+                self._send(200, data.encode(), "application/json")
+            except Exception as e:
+                self._send(500, json.dumps({"error": str(e)}).encode(), "application/json")
+            return
+
+        if path == "/api/fleet-live":
+            # same-origin HTTPS proxy for the :8088 fleet network (browser blocks
+            # mixed content HTTP-from-HTTPS — khalid hit this on /fleet-unified 2026-08-28)
+            import urllib.request as _ur
+            try:
+                with _ur.urlopen("http://127.0.0.1:8088/api/fleet", timeout=8) as r:
+                    body = r.read().decode()
+                self._send(200, body.encode(), "application/json")
+            except Exception as e:
+                self._send(502, json.dumps({"error": f"proxy failed: {e}"}).encode(), "application/json")
+            return
+
         if path == "/api/velocity":
             self._send(200, json.dumps(velocity_data(), ensure_ascii=False).encode(),
                        "application/json")
