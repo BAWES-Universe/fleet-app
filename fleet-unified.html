@@ -3,90 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BAWES Fleet — Live</title>
+<title>BAWES FLEET — LIVE</title>
 <style>
-  :root{--bg:#0a0e1a;--panel:#141b2e;--gold:#f5d90a;--green:#3ddc84;--red:#ff5c5c;--blue:#4da3ff;--txt:#e8edf5;}
-  *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',system-ui,sans-serif;}
-  body{background:radial-gradient(circle at 50% -20%,#1a2540,#0a0e1a);color:var(--txt);min-height:100vh;padding:20px;}
-  h1{color:var(--gold);font-size:24px;}
-  .sub{color:#7e8aa3;font-size:12px;margin:4px 0 16px;}
-  .top{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
-  .chip{background:var(--panel);border:1px solid #233;border-radius:10px;padding:10px 14px;font-size:13px;}
-  .chip b{color:var(--gold);font-size:20px;}
-  .schema{background:var(--panel);border:1px solid #233;border-radius:10px;padding:12px;font-size:11px;margin-bottom:16px;color:#7e8aa3;}
-  .schema b{color:var(--gold);}
-  table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden;}
-  th{background:#1a2540;padding:10px;text-align:left;font-size:12px;color:#7e8aa3;text-transform:uppercase;}
-  td{padding:10px;border-top:1px solid #1e2840;font-size:13px;}
-  tr:hover{background:#1a2540;}
-  .live{color:var(--green);} .dead{color:var(--red);} .idle{color:#7e8aa3;} .warn{color:#ffaa3d;}
-  .badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:bold;}
-  .ok{background:#1a3a2a;color:var(--green);} .bad{background:#3a1a1a;color:var(--red);} .miss{background:#3a3a1a;color:#ffaa3d;}
+  :root{--bg:#070a14;--panel:#0e1424;--line:#1c2848;--text:#d7e0ff;--dim:#7c86a8;--green:#7ee0a3;--gold:#e0b94c;--red:#e07e7e;--blue:#7eb8e0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:ui-monospace,Menlo,monospace;background:var(--bg);color:var(--text);padding:20px;max-width:760px;margin:0 auto}
+  h1{font-size:20px;color:var(--gold);letter-spacing:1px;margin-bottom:4px}
+  .ts{color:var(--dim);font-size:11px;margin-bottom:20px}
+  .live-count{display:inline-block;background:rgba(126,224,163,.12);color:var(--green);border:1px solid rgba(126,224,163,.35);padding:2px 10px;border-radius:20px;font-size:12px;margin-bottom:16px}
+  table{width:100%;border-collapse:collapse}
+  th{text-align:left;color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:1px;padding:6px 8px;border-bottom:1px solid var(--line)}
+  td{padding:10px 8px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
+  .brick{font-weight:bold;color:var(--gold)}
+  .live{color:var(--green)}
+  .dim{color:var(--dim);font-size:11px}
+  .work{color:var(--blue);font-size:12px}
+  .cap{color:var(--dim);font-size:11px}
+  .err{color:var(--red);padding:20px;text-align:center}
+  .footer{color:var(--dim);font-size:10px;margin-top:16px;text-align:center}
 </style>
 </head>
 <body>
-<h1>🧱 BAWES Fleet — Live Network</h1>
-<div class="sub">:8088/api/fleet · auto-refresh 10s · ONE schema, ONE source, ONE truth</div>
-
-<div class="schema">
-  <b>TELEMETRY-SCHEMA-v1 (canonical):</b>
-  brick_id, provider, cpu_cores, cpu_load_1m, mem_total_mb, mem_used_mb, threads_available, threads_in_use, working_on, status, ts
-  · Non-conforming bricks are flagged <span class="badge miss">MISSING</span> and must fix within 1 heartbeat cycle.
-</div>
-
-<div class="top">
-  <div class="chip">Members <b id="members">—</b></div>
-  <div class="chip">Live <b id="live">—</b></div>
-  <div class="chip">Delisted <b id="delisted">—</b></div>
-  <div class="chip">Schema OK <b id="ok">—</b></div>
-  <div class="chip">Schema MISS <b id="miss">—</b></div>
-  <div class="chip">Avg Age <b id="age">—</b></div>
-</div>
-
+<h1>BAWES FLEET — LIVE</h1>
+<div class="ts">one call · every live brick · real info · <span id="ts">–</span></div>
+<div class="live-count"><span id="live">0</span> LIVE</div>
 <table>
-  <thead>
-    <tr><th>Brick</th><th>Status</th><th>Provider</th><th>CPU</th><th>RAM</th><th>Threads</th><th>Schema</th><th>Age</th><th>Working On</th></tr>
-  </thead>
+  <thead><tr><th>Brick</th><th>Provider</th><th>Capacity</th><th>Working on</th><th>Updated</th></tr></thead>
   <tbody id="fleet"></tbody>
 </table>
-
+<div class="footer">source: /api/fleet-live · auto-refresh 15s · only LIVE bricks shown — dead/delisted are not part of the fleet</div>
 <script>
 const API='/api/fleet-live';
-const REQUIRED=['brick_id','provider','cpu_cores','cpu_load_1m','mem_total_mb','mem_used_mb','threads_available','threads_in_use','working_on','status','ts'];
-function schemaCheck(m){
-  const missing=REQUIRED.filter(k=>!(k in m));
-  if(missing.length===0) return 'ok';
-  return 'bad';
-}
 async function load(){
   try{
-    const d=await fetch(API).then(r=>r.json());
-    const members=d.members||[];
-    document.getElementById('members').textContent=members.length;
-    document.getElementById('live').textContent=members.filter(m=>m.status==='LIVE').length;
-    document.getElementById('delisted').textContent=members.filter(m=>m.status==='DELISTED').length;
-    document.getElementById('ok').textContent=members.filter(m=>schemaCheck(m)==='ok').length;
-    document.getElementById('miss').textContent=members.filter(m=>schemaCheck(m)==='bad').length;
-    const ages=members.map(m=>m.age_s||0);
-    document.getElementById('age').textContent=ages.length?Math.round(ages.reduce((a,b)=>a+b)/ages.length)+'s':'—';
+    const d=await (await fetch(API,{cache:'no-store'})).json();
+    const members=(d.members||[]).filter(m=>m.status==='LIVE');
+    document.getElementById('live').textContent=members.length;
+    document.getElementById('ts').textContent=new Date().toLocaleTimeString();
     const tb=document.getElementById('fleet');
     tb.innerHTML='';
-    members.sort((a,b)=> (b.age_s||0)-(a.age_s||0)).forEach(m=>{
+    members.forEach(m=>{
+      const id=m.brick_id||m.id||'?';
+      const prov=m.provider||'?';
+      const cap=[m.cpu_cores?m.cpu_cores+'c':'',m.mem_total_mb?Math.round(m.mem_total_mb/1024)+'GB':'',m.threads_available?m.threads_available+'th':''].filter(Boolean).join(' · ')||'–';
+      const work=(m.working_on||'idle').slice(0,70);
+      const age=m.age_s!=null?Math.round(m.age_s)+'s ago':'–';
       const tr=document.createElement('tr');
-      const cls=m.status==='LIVE'?'live':m.status==='DELISTED'?'dead':'idle';
-      const sc=schemaCheck(m);
-      const badge=sc==='ok'?'<span class="badge ok">OK</span>':'<span class="badge bad">MISS</span>';
-      const cpu=m.cpu_cores!=null?`${m.cpu_cores}c/${m.cpu_load_1m||0}`:'?';
-      const ram=m.mem_used_mb!=null?`${m.mem_used_mb}/${m.mem_total_mb}MB`:'?';
-      const th=m.threads_available!=null?`${m.threads_in_use||0}/${m.threads_available}`:'?';
-      const age=m.age_s!=null?`${Math.round(m.age_s)}s`:'?';
-      const wo=(m.working_on||'idle').slice(0,50);
-      tr.innerHTML=`<td><b>${m.brick_id||'?'}</b></td><td class="${cls}">${m.status}</td><td>${m.provider||'?'}</td><td>${cpu}</td><td>${ram}</td><td>${th}</td><td>${badge}</td><td>${age}</td><td>${wo}</td>`;
+      tr.innerHTML=`<td class="brick">${id}</td><td class="dim">${prov}</td><td class="cap">${cap}</td><td class="work">${work}</td><td class="dim">${age}</td>`;
       tb.appendChild(tr);
     });
-  }catch(e){document.getElementById('fleet').innerHTML='<tr><td colspan="9" style="color:var(--red)">API error: '+e.message+'</td></tr>';}
+    if(!members.length) tb.innerHTML='<tr><td colspan="5" class="err">no LIVE bricks — the fleet is dark</td></tr>';
+  }catch(e){
+    document.getElementById('fleet').innerHTML=`<tr><td colspan="5" class="err">API error: ${e.message}</td></tr>`;
+  }
 }
-setInterval(load,10000);
+setInterval(load,15000);
 load();
 </script>
 </body>
