@@ -5337,13 +5337,35 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         if path == "/api/fleet-answer":
-            # PUBLIC canonical fleet answer — the single truth endpoint any brick
-            # can curl from anywhere (same pattern as Vast/OpenRouter APIs).
+            # PUBLIC canonical fleet answer — built LIVE from the brain (:8088).
+            # No file to fight over: the one-call truth is live by construction.
             try:
                 import json as _j
-                with open("/srv/bricks/orchestrator/fleet-answer.json") as _f:
-                    _d = _j.load(_f)
-                _d["canonical_rule"] = "Every brick answers from this endpoint ONLY. Divergence = broken brick."
+                import urllib.request as _ur
+                _net = _j.loads(_ur.urlopen("http://127.0.0.1:8088/api/fleet", timeout=5).read())
+                _ms = _net.get("members", [])
+                _bricks = []
+                for _m in _ms:
+                    _bricks.append({
+                        "id": _m.get("brick_id"),
+                        "status": _m.get("status", "?"),
+                        "role": "worker",
+                        "working_on": _m.get("working_on") or "—",
+                        "capacity": f"{_m.get("cpu","?")}c",
+                        "host": _m.get("host"),
+                        "last_activity_s": round(_m.get("age_s") or 0, 1),
+                    })
+                _live = sum(1 for b in _bricks if b.get("status") == "LIVE")
+                _d = {
+                    "question": "Every brick: every other brick available + status + working on + capacity, one call",
+                    "answered_by": "dashboard live from :8088 brain",
+                    "generated_at": _j.dumps(_j.loads(_j.dumps(__import__("time").time()))),
+                    "fleet_velocity": {"live": _live, "members": len(_bricks), "source": "brain :8088"},
+                    "bricks_total": len(_bricks),
+                    "bricks": _bricks,
+                    "direction": ["one truth any mouth", "tiny installable bricks", "economy + myth moat", "make CrewAI/LangGraph jealous"],
+                    "canonical_rule": "Every brick answers from this endpoint ONLY. Divergence = broken brick.",
+                }
                 self._send(200, _j.dumps(_d, default=str).encode(), "application/json")
                 return
             except Exception as _e:
