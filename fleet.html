@@ -29,16 +29,24 @@ h1{color:var(--gold);font-size:22px;letter-spacing:1px}
 <body>
 <h1>⚡ FLEET COMMAND</h1>
 <div class="sub">Every brick · what they're working on · evolution — live, one screen · updated <span id="ago">now</span></div>
+<div id="velbar" class="sub" style="color:var(--teal)">loading velocity…</div>
 <div id="grid" class="grid"><div class="card">loading fleet…</div></div>
 <div id="evol" class="evol"><h2>🌱 EVOLUTION</h2><div id="evolItems" class="item">loading…</div></div>
 <div class="stamp">fleet.bawes.net/fleet · data: /api/fleet + canonical report + spawns/findings · refreshes every 10s</div>
 <script>
 async function load(){
   try{
-    const [net, rep] = await Promise.all([
+    const [net, rep, vel] = await Promise.all([
       fetch('/api/fleet').then(r=>r.json()).catch(()=>null),
-      fetch('/api/fleet/report').then(r=>r.json()).catch(()=>null)
+      fetch('/api/fleet/report').then(r=>r.json()).catch(()=>null),
+      fetch('/api/velocity').then(r=>r.json()).catch(()=>null)
     ]);
+    const v = vel || {};
+    const burn = v.burn || {};
+    const liveCount = (net && net.members ? net.members.filter(m=>m.status==='LIVE').length : '?');
+    const velBar = document.getElementById('velbar');
+    if(velBar) velBar.innerHTML = '<span class="pill live">VELOCITY</span> ' + (v.fleet ? (v.fleet.utilization_pct||'?')+'% live' : '—') +
+      ' · receipts 1h: ' + (burn.receipts_calls_1h||'?') + ' · burns: ' + (burn.total_burns||'?') + ' · LIVE: ' + liveCount;
     const members = (net && net.members) || [];
     let bricks = members.map(m=>({
       id:m.brick_id, status:m.status||'LIVE',
