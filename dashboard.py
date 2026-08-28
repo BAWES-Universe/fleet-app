@@ -5609,15 +5609,23 @@ class Handler(BaseHTTPRequestHandler):
             # CAPACITY BOARD + epic tracker panel (session-gated like /approvals).
             try:
                 html = open(os.path.join(BASE, "capacity.html"), "rb").read()
+                self._send(200, html, "text/html; charset=utf-8")
+            except FileNotFoundError:
+                self._send(500, b"capacity.html missing", "text/plain")
+        elif path == "/fleet-unified":
+            try:
+                html = open(os.path.join(BASE, "fleet-unified.html"), "rb").read()
+                self._send(200, html, "text/html; charset=utf-8")
+                return
+            except FileNotFoundError:
+                self._send(500, b"fleet-unified.html missing", "text/plain")
+                return
         elif path == "/fleet-live":
             try:
                 html = open(os.path.join(BASE, "fleet-live.html"), "rb").read()
                 self._send(200, html, "text/html; charset=utf-8")
             except FileNotFoundError:
                 self._send(500, b"fleet-live.html missing", "text/plain")
-                self._send(200, html, "text/html; charset=utf-8")
-            except FileNotFoundError:
-                self._send(500, b"capacity.html missing", "text/plain")
         elif path == "/api/capacity":
             payload = capacity_data()
             payload["session"] = {"user": user.get("username"), "role": user.get("role")}
